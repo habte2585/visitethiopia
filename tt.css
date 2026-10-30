@@ -1,0 +1,201 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General page style */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Navigation bar */
+.navbar {
+    width: 100%;
+    min-height: 90px;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    gap: 25px;
+}
+
+/* Website logo */
+.logo {
+    color: #f5f5f5;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.flag {
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+/* Navigation links */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e8b83f;
+}
+
+/* Main background section */
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 70px 6%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee")
+        center center / cover no-repeat;
+}
+
+/* Hero text */
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 7vw, 100px);
+    line-height: 1.12;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #f4f4f4;
+}
+
+.hero h1 span {
+    color: #d8aa36;
+}
+
+/* Description */
+.hero p {
+    font-size: 23px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 35px;
+}
+
+/* Get Started button */
+.btn {
+    display: inline-block;
+    background-color: #d8aa36;
+    color: #222;
+    padding: 19px 32px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #f0c65a;
+    transform: translateY(-3px);
+}
+
+/* Other sections */
+.content-section {
+    min-height: 250px;
+    padding: 70px 6%;
+    text-align: center;
+    background-color: #202020;
+    border-bottom: 1px solid #444;
+}
+
+.content-section h2 {
+    color: #d8aa36;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background-color: #171717;
+    color: #ccc;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 50px 6%;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 14px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 15px 25px;
+    }
+}

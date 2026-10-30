@@ -1,0 +1,197 @@
+
+    
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.headContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: #151a1e;
+    padding: 10px 9%;
+    min-height: 83px;
+    gap: 20px;
+}
+
+.brandContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brandContainer h4 {
+    color: white;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.logoContainer img {
+    display: block;
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.menuContainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+.menuContainer ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 30px;
+}
+
+.menuContainer ul li {
+    padding: 10px;
+}
+
+.menuContainer ul li:hover {                                                                                                                                                                                            
+    background-color: #0f4c7e;
+    border-radius: 15%;
+}
+
+.menuContainer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-variant: small-caps;
+    white-space: nowrap;
+}
+
+
+.bodyContainer {
+    min-height: calc(100vh - 83px);
+    padding: 190px 10% 80px;
+
+    background-image:
+        linear-gradient(#1c011c30,
+                        rgba(16, 14, 12, 0.959)),
+        url("../images/image.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.neverStopContainer h1, .exploreContainer h1 {
+    font-size: clamp(3rem, 3rem, 7rem);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.neverStopContainer h1 {
+    color: white;
+}
+
+.exploreContainer h1 {
+    color: rgb(255, 234, 0);
+}
+
+
+.bodyContainer p {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.getStartedContainer {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.getStartedContainer button {
+    background-color: #e99c0d;
+    border: none;
+    border-radius: 40px;
+    padding: 20px 30px;
+}
+
+.getStartedContainer button a {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.getStartedContainer button:hover {
+        background-color: #d5ce00cf;
+    }
+ 
+    .adventureContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        color: white;
+        padding: 3rem;
+        gap: 1rem;
+        margin: 0;
+    }
+    .adventureContainer .adventureTourContainer {
+        grid-column: 1/4;
+        display: flex;
+        justify-content: center;
+    }
+
+    .adventureContainer .adventureTourContainer a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-variant: small-caps;
+        font-weight: 700;
+    }
+
+    .adventureContainer .adventureBoxContainer {
+        background-color: #110d0d;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+.adventureContainer  .adventureBoxContainer .adventureImageContainer {
+    display: flex ;
+    justify-content: center;
+}
+
+    .adventureContainer  .adventureBoxContainer .adventureImageContainer img{
+        width: 20rem;
+        height: 19rem;
+        border-radius: 50%;
+    }
+
+    .adventureContainer .adventureBoxContainer .adventureParagraphContainer p {
+        font-size: 1.2rem ;
+        line-height: 1.6rem;
+    }
+
+    .adventureContainer .adventureBoxContainer .adventureReadMoreContainer {
+        border: 1rem solid #e2a84b;
+        display: block;
+        text-decoration: none;
+        width: fit-content;
+        justify-self: center;
+        border-radius: 40%;
+    }
+.adventureContainer .adventureBoxContainer .adventureReadMoreContainer a{
+        font-size: 1.1rem;
+        text-transform: capitalize;
+}
